@@ -1,0 +1,84 @@
+default: 
+    image: 
+        name: $CONTAINER
+        entrypoint: ["/bin/sh", "-c"]
+
+stages:
+  - run_combine
+
+.parallel_template: &parallel_configuration  
+    before_script:
+        - source /cvmfs/cms.cern.ch/cmsset_default.sh
+        - cd $HOME_DIR
+        - cmsenv || true
+        - cd $CI_PROJECT_DIR
+        - PYTHON3PATH=${PYTHON3PATH}:${CI_PROJECT_DIR}/models
+        - ulimit -s unlimited
+    tags:
+        - cvmfs
+    stage: run_combine
+    parallel:
+        matrix:
+        - mass: ${MH_points}
+
+
+T2W:
+    <<: *parallel_configuration 
+    needs:
+        - pipeline: $PARENT_PIPELINE_ID
+          job: CombineCards
+          artifacts: true     
+
+    script:
+        - text2workspace.py -m $mass ${TEXT2WORKSPACE_OPTIONS} -o workspace_${mass}.root $DATACARD;   
+    
+    rules: 
+        - if: $RUN_workspace == "true"
+      
+    artifacts:
+        when: on_success
+        expire_in: 1 days
+        paths:
+            - workspace_${mass}.root
+
+MultiDimFit:
+    <<: *parallel_configuration 
+    needs:
+        - job: T2W
+          artifacts: true
+
+    script:
+        - mkdir multidimfit_${mass}
+        - ulimit -s unlimited
+        - combine -M MultiDimFit -m ${mass} ${MULTIDIMFIT_BLIND} -d workspace_${mass}.root -n ${NAME} ${MULTIDIMFIT_OPTIONS} -v 3 
+        - mv -v *.root multidimfit_${mass}/.
+    rules: 
+        - if: $RUN_mdf == "true" && $RUN_workspace == "true"
+  
+    artifacts:
+        when: on_success
+        expire_in: 1 days
+        paths:
+            - multidimfit_${mass}/*.root
+
+
+Impacts:
+    <<: *parallel_configuration 
+    needs:
+        - job: T2W
+          artifacts: true
+    script:
+        - mkdir impacts_${mass}
+        - ulimit -s unlimited 
+        - combineTool.py -M Impacts -m ${mass} -d workspace_${mass}.root -n ${NAME}  --doFits  ${IMPACTS_OPTIONS} ${IMPACTS_blind}
+        - combineTool.py -M Impacts -m ${mass} -d workspace_${mass}.root -n ${NAME}  --approx robust  --output impacts_robust.json 
+        - plotImpacts.py -i impacts_robust.json -o impacts_approx_robust ${IMPACTS_plot_hide_POI}
+        - mv -v *.root *.pdf *.json impacts_${mass}/.
+    rules: 
+        - if: $RUN_impacts == "true" && $RUN_workspace == "true"
+    artifacts:
+        when: on_success
+        expire_in: 1 days
+        paths:
+            - impacts_${mass}/
+
