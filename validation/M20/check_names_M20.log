@@ -1,0 +1,14 @@
+
+ ########################################
+
+
+Run on
+  datacard: nps-26-009-datacards/input/datacard_M20_Run2Run3.txt
+  systematics file: nps-26-009-datacards/input/systematics.yml
+  master_file: systematics/systematics_master.yml
+
+Summary:  148 nuisances checked, no issues related to nuisance parameter names found.
+
+ ########################################
+
+[SetFlag] Changing value of flag "workspaces-use-clone" from 0 to 1

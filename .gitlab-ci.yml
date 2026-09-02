@@ -5,20 +5,20 @@ include:
 
 
 variables:
-  INPUT_DIR: "input" 
-  CARD_rgx: "*" 
+  INPUT_DIR: "input"
+  CARD_rgx: "datacard_M20_Run2Run3.txt"
   GIT_SUBMODULE_STRATEGY: recursive
   GIT_STRATEGY: clone
-  MH_points: "[120,90]" #provide a list of points or a single mass point to run the datacard validation pipeline 
-  NAME: ".test"
+  MH_points: "[20]" #provide a list of points or a single mass point to run the datacard validation pipeline
+  NAME: ".NPS26009_M20"
   POI: "r"
   TEXT2WORKSPACE_OPTIONS: " --for-fits --no-wrappers --optimize-simpdf-constraints=cms --X-pack-asympows --use-histsum"
   MULTIDIMFIT_OPTIONS: "--X-rtd FAST_VERTICAL_MORPH --setParameters ${POI}=1 --cminDefaultMinimizerStrategy 0 --saveFitResult"
-  MULTIDIMFIT_BLIND: "-t -1" # run blinded fits by default, if the analysis passed unblinding this variable can be converted to "" 
+  MULTIDIMFIT_BLIND: "-t -1" # run blinded fits by default, if the analysis passed unblinding this variable can be converted to ""
   IMPACTS_OPTIONS: "--X-rtd FAST_VERTICAL_MORPH --setParameters ${POI}=1  --approx robust  --robustFit 1 --X-rtd MINIMIZER_MaxCalls=9999999"
   IMPACTS_plot_hide_POI: "--blind" # hide POI post-fit value from impacts plot
-  IMPACTS_blind: "-t -1" # run blinded fits by default, if the analysis passed unblinding this variable can be converted to "" 
-  RUN_checkSyst: "true" # should be set to true if one wants to run the systematics 
+  IMPACTS_blind: "-t -1" # run blinded fits by default, if the analysis passed unblinding this variable can be converted to ""
+  RUN_checkSyst: "true" # should be set to true if one wants to run the systematics
   NPs_dictionary: "input/systematics.yml" # the path to .yml file with the systematics description for this analysis
-  PUBLICATION_TITLE: "Test upload"
+  PUBLICATION_TITLE: "Search for anomalous dimuon resonances within b jets using Run 2 and 2022-2023 Run 3 data with the CMS experiment"
   PUBLICATION_VERSION: "v0.1"
