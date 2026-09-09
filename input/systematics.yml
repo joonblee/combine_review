@@ -1,39 +1,39 @@
 # NPS-26-009 nuisance dictionary for CMS systematics/check_names.py
-# Rebuilt from the current Run2Run3 counting datacard nuisance names.
-# CMS standard names are retained where applicable.
-# Analysis-specific sources use the CMS_NPS26009_ prefix.
+# Correlations follow the Run-2/Run-3 statistical model used by the analysis.
+# Standard CMS nuisance names are retained when they represent the intended
+# correlation. Analysis-specific sources use the CMS_NPS26009_ prefix.
 
 'CMS_res_j_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: jet_energy_resolution
-  description: 'Jet energy resolution uncertainty separated by data-taking period.'
+  description: 'Jet energy resolution uncertainty separated by data-taking era.'
 
 'CMS_scale_j_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: jet_energy_scale
-  description: 'Jet energy scale uncertainty separated by data-taking period.'
+  description: 'Jet energy scale uncertainty separated by data-taking era.'
 
-'CMS_pileup_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+'CMS_pileup_(13TeV|13p6TeV)':
   class: pileup
-  description: 'Pileup uncertainty separated by data-taking period.'
+  description: 'Pileup uncertainty correlated across eras within Run 2 or Run 3 and decorrelated between the two Runs.'
 
-'CMS_eff_m_id_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
-  class: muon_efficiency
-  description: 'Muon identification efficiency uncertainty separated by data-taking period.'
+'CMS_NPS26009_eff_m_id_(Run2|Run3)':
+  class: custom
+  description: 'Muon identification efficiency uncertainty correlated across eras within a Run and decorrelated between Run 2 and Run 3.'
 
-'CMS_eff_m_trigger_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
-  class: muon_efficiency
-  description: 'Muon trigger efficiency uncertainty separated by data-taking period.'
+'CMS_NPS26009_eff_m_trigger_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+  class: custom
+  description: 'Muon trigger efficiency uncertainty treated independently for each data-taking era.'
 
-'CMS_scale_m_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+'CMS_scale_m_(13TeV|13p6TeV)':
   class: muon_energy_scale
-  description: 'Muon momentum scale uncertainty separated by data-taking period.'
+  description: 'Muon momentum scale/resolution uncertainty correlated across eras within Run 2 or Run 3 and decorrelated between the two Runs.'
 
-'CMS_btag_fixedWP_bc_uncorrelated_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+'CMS_btag_fixedWP_comb_bc_uncorrelated_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: btag
-  description: 'Uncorrelated component of the fixed-working-point b/c-jet tagging scale-factor uncertainty, separated by data-taking period.'
+  description: 'Era-uncorrelated component of the fixed-working-point heavy-flavour b/c tagging uncertainty using the comb calibration.'
 
-'CMS_btag_fixedWP_light_uncorrelated_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+'CMS_btag_fixedWP_incl_light_uncorrelated_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: btag
-  description: 'Uncorrelated component of the fixed-working-point light-jet tagging scale-factor uncertainty, separated by data-taking period.'
+  description: 'Era-uncorrelated component of the fixed-working-point light-flavour tagging uncertainty using the inclusive light-flavour calibration.'
 
 pdf_alphas:
   class: pdf
@@ -49,39 +49,43 @@ QCDscale_ren_ttbar:
 
 'CMS_NPS26009_lumi_(2016|2017|2018|2022|2023)':
   class: custom
-  description: 'Integrated-luminosity normalization uncertainty. The 2016 nuisance is shared by 2016preVFP and 2016postVFP, the 2022 nuisance by 2022 and 2022EE, and the 2023 nuisance by 2023 and 2023BPix.'
+  description: 'Aggregate luminosity uncertainty for the indicated year group, preserving the implemented luminosity correlation model.'
 
 'CMS_l1_prefiring_(2016preVFP|2016postVFP|2017|2018)':
   class: custom
-  description: 'L1 ECAL/muon prefiring uncertainty treated independently by Run 2 data-taking period.'
+  description: 'L1 ECAL/muon prefiring uncertainty decorrelated between the Run 2 analysis eras.'
 
-'CMS_NPS26009_btag_fixedWP_(bc|light)_correlated_(13TeV|13p6TeV)':
+'CMS_NPS26009_btag_fixedWP_comb_bc_correlated_(13TeV|13p6TeV)':
   class: custom
-  description: 'Correlated component of the DeepJet fixed-working-point b-tagging uncertainty. Heavy-flavour and light-flavour components are separate; the 13TeV component is shared within Run 2 and the 13p6TeV component is shared within Run 3.'
+  description: 'Correlated component of the fixed-working-point heavy-flavour b/c tagging uncertainty using the comb calibration, shared within Run 2 or Run 3 and decorrelated between the two Runs.'
+
+'CMS_NPS26009_btag_fixedWP_incl_light_correlated_(13TeV|13p6TeV)':
+  class: custom
+  description: 'Correlated component of the fixed-working-point light-flavour tagging uncertainty using the inclusive light-flavour calibration, shared within Run 2 or Run 3 and decorrelated between the two Runs.'
 
 'CMS_NPS26009_bckgNorm_QCD_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: custom
-  description: 'Normalization uncertainty of the data-driven QCD background in the OS b-jet signal category, treated independently by data-taking period.'
+  description: 'Normalization uncertainty of the data-driven QCD background in the OS b-jet signal category, treated independently by data-taking era.'
 
 'CMS_NPS26009_bckgShape_QCD_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: custom
-  description: 'QCD functional-form uncertainty propagated as an additive Gaussian uncertainty on the absolute QCD yield through a constrained rateParam, treated independently by data-taking period.'
+  description: 'QCD functional-form uncertainty propagated as an additive Gaussian uncertainty on the absolute QCD yield, treated independently by data-taking era.'
 
 'CMS_NPS26009_NFStat_DY_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: custom
-  description: 'Statistical uncertainty in the normalization factor used for the data-driven Drell-Yan prediction, treated independently by data-taking period.'
+  description: 'Statistical uncertainty in the normalization factor used for the data-driven Drell-Yan prediction, treated independently by data-taking era.'
 
 'CMS_NPS26009_LightJetStat_DY_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: custom
-  description: 'Finite-statistics uncertainty of the light-jet control-region input to the data-driven Drell-Yan prediction, treated independently by data-taking period.'
+  description: 'Finite-statistics uncertainty of the light-jet control-region input to the data-driven Drell-Yan prediction, treated independently by data-taking era.'
 
 'CMS_NPS26009_NFModel_DY_BJetOS_(13TeV|13p6TeV)':
   class: custom
-  description: 'Model uncertainty in the normalization factor used for the data-driven Drell-Yan prediction, correlated within Run 2 or Run 3 and decorrelated between the two run periods.'
+  description: 'Model uncertainty in the data-driven Drell-Yan normalization factor, correlated within Run 2 or Run 3 and decorrelated between the two Runs.'
 
 'CMS_NPS26009_MCstat_(signal|ttbar|singleTop|other)_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
   class: custom
-  description: 'Finite simulated-sample statistical uncertainty for the indicated process and data-taking period. These nuisance parameters are independent between processes and periods.'
+  description: 'Finite simulated-sample statistical uncertainty for the indicated process and data-taking era.'
 
 CMS_NPS26009_topmass_ttbar_BJetOS:
   class: custom
