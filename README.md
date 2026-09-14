@@ -138,7 +138,7 @@ python3 systematics/check_names.py \
   --analysis NPS26009
 ```
 
-The saved `validation/M20/check_names_M20.log` reports
+The saved `review_validation/M20/check_names_M20.log` reports
 
 ```text
 132 nuisances checked, no issues related to nuisance parameter names found.
@@ -173,4 +173,4 @@ The difference is **7.1%, not the previous approximately 3%**. The physical limi
 
 **Scan-plot export.** Both `scan_plot_M20.log` and `scan_plot_M70.log` report failures to write their PDF/PNG outputs. The helper passes an absolute output prefix to `plot1DScan.py`, which produces a malformed `.//data6/...` output path. Replot the saved scan ROOT files using a relative output basename and verify the files exist. The stored interval summaries also contain unbracketed lower crossings (M20 at 68%/95%, M70 at 95%); do not report those endpoints as measured two-sided intervals.
 
-The compact diagnostics are under `validation/M20/` and `validation/M70/`; detailed logs reside in the pinned production snapshot. **The review package is synchronised, but the validation record is not yet complete.** This audit did not rerun Combine or inspect the transient ROOT toy ensembles.
+The compact diagnostics are under `review_validation/M20/` and `review_validation/M70/`; detailed logs reside in the pinned production snapshot. **The review package is synchronised, but the validation record is not yet complete.** This audit did not rerun Combine or inspect the transient ROOT toy ensembles.
