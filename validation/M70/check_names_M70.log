@@ -3,11 +3,11 @@
 
 
 Run on
-  datacard: /data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/datacards_NIsoMuon/alpha/blind/combined/Run2Run3/datacard_M-20_Run2Run3.txt
+  datacard: /data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/datacards_NIsoMuon/alpha/blind/combined/Run2Run3/datacard_M-70_Run2Run3.txt
   systematics file: /data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/systematics_NPS26009.yml
   master_file: systematics/systematics_master.yml
 
-Summary:  132 nuisances checked, no issues related to nuisance parameter names found.
+Summary:  130 nuisances checked, no issues related to nuisance parameter names found.
 
  ######################################## 
 

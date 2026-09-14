@@ -430,16 +430,16 @@ def task_scan(args: argparse.Namespace, card: Path) -> None:
     if not plotter:
         print(f"[WARNING] plot1DScan.py not found; retained {root_file}", file=sys.stderr)
         return
-    plot_base = output / f"scan_{args.target}_M{mass_label(args.mass)}_Bonly"
+    plot_base = f"scan_{args.target}_M{mass_label(args.mass)}_Bonly"
     status = run_command(
-        [plotter, str(root_file), "--POI", "r", "-o", str(plot_base)],
+        [plotter, str(root_file), "--POI", "r", "-o", plot_base],
         output,
         dry_run=args.dry_run,
         log=output / f"scan_plot_M{mass_label(args.mass)}.log",
     )
     if status != 0:
         raise RuntimeError("plot1DScan.py failed")
-    print(f"[SAVED] {plot_base}.pdf")
+    print(f"[SAVED] {output / (plot_base + '.pdf')}")
 
 
 def read_limit_tree_value(root_path: Path) -> float:
@@ -694,6 +694,16 @@ def task_sb_impacts(args: argparse.Namespace, card: Path) -> None:
         mass_for_combine(args.mass),
         "--robustFit",
         "1",
+        "--setCrossingTolerance",
+        "1e-8",
+        "--cminDefaultMinimizerStrategy",
+        "1",
+        "--cminDefaultMinimizerTolerance",
+        "1e-4",
+        "--setRobustFitStrategy",
+        "1",
+        "--setRobustFitTolerance",
+        "1e-4",
         "--setParameters",
         f"r={r_inj:.12g}",
         "--rMin",
