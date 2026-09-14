@@ -6,7 +6,7 @@ include:
 
 variables:
   INPUT_DIR: "input"
-  CARD_rgx: "datacard_M20_Run2Run3.txt"
+  CARD_rgx: "datacard_M20_Run2Run3"
   GIT_SUBMODULE_STRATEGY: recursive
   GIT_STRATEGY: clone
   MH_points: "[20]" #provide a list of points or a single mass point to run the datacard validation pipeline
