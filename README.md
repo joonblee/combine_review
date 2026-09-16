@@ -112,8 +112,8 @@ The nuisance dictionary is `input/systematics.yml`. In the table below, `ENERGY`
 | JES/JER | `CMS_scale_j_ERA`, `CMS_res_j_ERA` | Independent by era |
 | Heavy-flavour b tagging, correlated | `CMS_NPS26009_btag_fixedWP_comb_bc_correlated_ENERGY` | Shared within a Run; independent between Runs |
 | Light-flavour b tagging, correlated | `CMS_NPS26009_btag_fixedWP_incl_light_correlated_ENERGY` | Shared within a Run; independent between Runs |
-| Heavy-flavour b tagging, uncorrelated | `CMS_btag_fixedWP_comb_bc_uncorrelated_ERA` | Independent by era |
-| Light-flavour b tagging, uncorrelated | `CMS_btag_fixedWP_incl_light_uncorrelated_ERA` | Independent by era |
+| Heavy-flavour b tagging, uncorrelated | `CMS_btag_fixedWP_bc_uncorrelated_ERA` | Independent by era |
+| Light-flavour b tagging, uncorrelated | `CMS_btag_fixedWP_light_uncorrelated_ERA` | Independent by era |
 
 Era-specific nominal corrections and Up/Down responses are retained. The muon ID and momentum inputs are aggregate central-calibration variations, not a separately propagated statistical/systematic covariance decomposition. Their Run-wise correlation is the **analysis prescription**, not a consequence of identical correction values or of passing the naming checker. `mu_scale` reads the existing `MuonEnDown/Up` variations; a separate independent momentum-resolution nuisance is not introduced.
 
