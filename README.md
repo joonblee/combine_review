@@ -146,24 +146,36 @@ The saved `review_validation/M20/check_names_M20.log` reports
 
 The former 150-name model had independent era nuisances for pileup, muon ID, and muon momentum. Replacing each set of eight by two Run-level parameters reduces the M20 count by 18. Counts can vary with mass because some terms are inactive; the M70 card contains 130 constrained nuisance parameters. Naming validation is not a validation of fit convergence or a prescription for physical correlations.
 
-## Validation status: audit of the 9 September 2026 outputs
+## Validation status
 
-The audited production snapshot is [`higgs_combine@331f9c3`](https://github.com/joonblee/higgs_combine/commit/331f9c3cdfd0f3d6832889dde9da8c4323ca3f17), and the corresponding review-input snapshot is [`combine_review@3b738ff`](https://github.com/joonblee/combine_review/commit/3b738ffb18ab72b7f9162b641be814259b0a0caf). The M20 input, all thirteen preserved cards, dictionary, scripts, conversion factors, and copied diagnostics match their production counterparts by Git blob SHA. **Matching files do not imply that every diagnostic was regenerated or converged.**
+The preserved model and review material correspond to the final blinded
+production used for the analysis note.
 
-The M20/M70 `ValidateDatacards.py` reports contain only `largeNormEff`: 29 process/channel entries involving 24 nuisance names at M20, and 65 entries involving 44 names at M70. There are no other alert categories in these reports. These warnings are distinct from the resolved nuisance-name issues.
+The CMS nuisance-name checker reports no naming issues for the representative
+M20 card (132 active nuisances) or the M70 card (130 active nuisances).
 
-The nominal limit JSON files cover all thirteen masses for each of the three targets, with finite, ordered expected quantiles. All 39 nominal impact JSON nuisance-name sets match their current cards. The full-combination median expected limits range from `5.725732054751335e-06` at M12 to `3.910017938680879e-04` at M70. Central B-only FitDiagnostics values are near zero at M20/M70; the S+B initial fits recover the injections `r=15.5` and `r=0.94921875`.
+The previously zero-width intervals of the very small additive DY
+`LightJetStat` nuisances were traced to numerical interval-crossing precision.
+Using tighter crossing and minimizer tolerances gives finite intervals, while
+dedicated checks show no change in the affected expected limits at the stored
+numerical precision. The nominal likelihood is therefore unchanged.
 
-The M70 HybridNew Asimov comparison is
+The additive QCD functional-form nuisance has finite fitted intervals and shows
+no analogous numerical problem.
 
-```text
-AsymptoticLimits exp0 (internal r) : 0.94921875
-HybridNew on B-only Asimov        : 1.016489031336746
-HybridNew / AsymptoticLimits      : 1.0708691029720452
-HybridNew grid                   : 29 points, 500 toys per point
-```
+Bias tests were performed at M20 and M70, including background-only and
+signal-injected pseudo-experiments. No material signal-recovery bias is
+observed.
 
-The difference is **7.1%, not the previous approximately 3%**. The physical limits are `3.910017938680879e-04` and `4.187117402599798e-04`. No toy-statistical uncertainty on their ratio is stored, and this comparison does not establish ensemble coverage.
+Background-only 1D likelihood scans at M20 and M70 have bracketed 68% and 95%
+crossings after extending the scan ranges.
+
+At M70, the HybridNew limit evaluated on a background-only Asimov dataset is
+about 7.1% higher than the corresponding AsymptoticLimits result.
+
+The analysis remains blinded throughout these validation studies. Compact
+validation outputs are stored under `review_validation/M20/` and
+`review_validation/M70/`.
 
 ### Outstanding diagnostics
 
