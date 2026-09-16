@@ -177,12 +177,3 @@ The analysis remains blinded throughout these validation studies. Compact
 validation outputs are stored under `review_validation/M20/` and
 `review_validation/M70/`.
 
-### Outstanding diagnostics
-
-**Cached bias toys.** Both production `review_logs/bias_M20.log` and `bias_M70.log` explicitly report `[BIAS] reuse completed fit` for every injection. The unchanged bias summaries are retained as existing outputs, but do not validate signal recovery after the correlation revision. The helper reuses matching toy-fit filenames unless `--force` is supplied; the saved `review.sh` does not force the bias tasks. Rerun these tasks with `--force`, inspect fit counts and pulls, and replace the two preserved summaries before marking this check complete.
-
-**Zero-width nuisance intervals.** The nominal Run3 and Run2Run3 impact files contain `fit: [0, 0, 0]` for `CMS_NPS26009_LightJetStat_DY_BJetOS_2023BPix` at M55 and `CMS_NPS26009_LightJetStat_DY_BJetOS_2023` at M70. Their nonzero Gaussian widths are approximately `4.30e-05` and `7.79e-05` events, respectively; both are additive parameters with a lower bound at zero. The M70 S+B nuisance-fit log also reports `[ERROR] Closed range without finding crossing!`. A zero stored impact must not be interpreted as proof that this uncertainty is absent. These interval fits need a dedicated boundary and numerical-precision check; the cause and the effect on inference have not been established by this file audit.
-
-**Scan-plot export.** Both `scan_plot_M20.log` and `scan_plot_M70.log` report failures to write their PDF/PNG outputs. The helper passes an absolute output prefix to `plot1DScan.py`, which produces a malformed `.//data6/...` output path. Replot the saved scan ROOT files using a relative output basename and verify the files exist. The stored interval summaries also contain unbracketed lower crossings (M20 at 68%/95%, M70 at 95%); do not report those endpoints as measured two-sided intervals.
-
-The compact diagnostics are under `review_validation/M20/` and `review_validation/M70/`; detailed logs reside in the pinned production snapshot. **The review package is synchronised, but the validation record is not yet complete.** This audit did not rerun Combine or inspect the transient ROOT toy ensembles.
