@@ -102,3 +102,11 @@ CMS_NPS26009_pdf_NNPDF31:
 'CMS_NPS26009_QCDscale_(fac|ren)_singleTop':
   class: custom
   description: 'Factorization- or renormalization-scale uncertainty for the single-top background, correlated across data-taking periods and independent of the corresponding ttbar scale nuisance.'
+
+'CMS_NPS26009_stat_QCD_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+  class: custom
+  description: 'Additive QCD statistical shift with width sigma_NFstat + sigma_SSfitStat, a conservative first-order bound for their unknown correlation; independent by era.'
+
+'CMS_NPS26009_yield_QCD_BJetOS_(2016preVFP|2016postVFP|2017|2018|2022|2022EE|2023|2023BPix)':
+  class: custom
+  description: 'Derived QCD yield max(0, shape-yield parameter + statistical shift); this formula is not an additional free nuisance.'

@@ -141,7 +141,47 @@ The luminosity update changes the generator and checked-in datacards. Existing l
 
 L1 prefiring remains independent between the Run2 eras. The existing generator-theory and top-mass correlations are unchanged.
 
-For data-driven QCD, the normalisation uncertainty is multiplicative (`lnN`), while the functional-form envelope is propagated as an additive Gaussian uncertainty on the absolute QCD yield through a constrained `rateParam`. Both families are independent by era.
+For data-driven QCD, the updated generator retains normalisation modelling as
+`CMS_NPS26009_bckgNorm_QCD_BJetOS_ERA` (`lnN`) and the functional-form width as
+`CMS_NPS26009_bckgShape_QCD_BJetOS_ERA` (Gaussian `param`). It adds
+`CMS_NPS26009_stat_QCD_BJetOS_ERA`, a zero-centred additive Gaussian statistical
+shift. All three QCD nuisance families are independent between eras.
+
+`QCDStat/metadata` in each regenerated `NIsoMuon_SS_fit.root` provides the full
+SS-fit covariance and transfer-factor statistics. The counting-window integral
+is propagated before assigning errors; TH1 bin errors remain zero. NF-stat
+includes finite control-data and MC statistics, plus the shared DY NF-stat in the
+low-mass OS subtraction. SS-fit-stat is `sqrt(g^T C g)` with the transfer fixed.
+Their SS-data cross-covariance is unknown, so the statistical width is the
+conservative first-order bound `sigma_NFstat + sigma_SSfitStat`. This is a
+Gaussian approximation, not a coverage test or a simultaneous control-region fit.
+
+The QCD base rate is 1. A single formula modifier computes
+`max(0, shape-yield parameter + statistical shift)`; norm modelling multiplies
+this yield. The shape parameter has the original nominal yield and envelope
+width. The separate statistical parameter has mean zero. Nominal yields and
+unrounded background-only Asimov observations therefore remain unchanged for
+unchanged ROOT inputs. Both workflow and review helpers evaluate the formula at
+Gaussian parameter means when reconstructing nominal yields.
+
+**Regeneration status:** the checked-in cards under `input/` and `preservation/`,
+and the saved validation/limit outputs, still precede this statistical update.
+New uncertainties cannot be reconstructed for those cards without the original
+per-era ROOT inputs and SS covariance. Do not relabel those snapshots as the new
+model. The updated `scripts/limit_workflow.py` rejects older background contracts;
+regenerate per-era QCD ROOT files, rebuild cards, then rerun limits and reviews.
+Keep `scripts/qcd_stat_uncertainty.py` alongside the workflow. The naming
+dictionary now includes the new statistical parameter and formula modifier.
+
+For a first check in the production NIsoMuon directory, rebuild cards only:
+
+```bash
+python3 limit_workflow.py --stage cards --target runs --parameter alpha \
+    --mode blind --sigfit-dir ./sigfit_inputs --strict
+```
+
+Then use the existing full-production command above to rerun the statistical
+outputs. Actual ROOT/Combine production is performed on the analysis server.
 
 The data-driven DY prediction is the background-subtracted light-jet control source multiplied by an aMC@NLO normalisation factor. For a positive source, `LightJetStat` is multiplicative, `NFStat` is a Gaussian-constrained normalisation-factor `rateParam`, and `NFModel` is a multiplicative aMC@NLO-versus-MadGraph modelling response. `LightJetStat` and `NFStat` are independent by era; `NFModel` is shared within a Run and independent between Runs. A zero-source channel uses the dedicated additive `LightJetStat` yield parameter, without multiplicative `NFStat` or `NFModel` effects.
 
@@ -170,8 +210,10 @@ The former 150-name model had independent era nuisances for pileup, muon ID, and
 
 ## Validation status
 
-The preserved model and review material correspond to the final blinded
-production used for the analysis note.
+The preserved model and review material are snapshots of the blinded
+production used for the analysis note, before the new QCD statistical nuisance.
+The statements below describe those saved snapshots; updated-model validation
+requires regenerated inputs, cards and fits.
 
 The CMS nuisance-name checker reports no naming issues for the representative
 M20 card (132 active nuisances) or the M70 card (130 active nuisances).
