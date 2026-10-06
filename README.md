@@ -117,7 +117,21 @@ The nuisance dictionary is `input/systematics.yml`. In the table below, `ENERGY`
 
 Era-specific nominal corrections and Up/Down responses are retained. The muon ID and momentum inputs are aggregate central-calibration variations, not a separately propagated statistical/systematic covariance decomposition. Their Run-wise correlation is the **analysis prescription**, not a consequence of identical correction values or of passing the naming checker. `mu_scale` reads the existing `MuonEnDown/Up` variations; a separate independent momentum-resolution nuisance is not introduced.
 
-Luminosity remains grouped by calendar year, with pre/post detector periods within a year sharing the corresponding aggregate nuisance. L1 prefiring remains independent between the Run2 eras. The existing generator-theory and top-mass correlations are unchanged.
+Luminosity uses the multiyear `lnN` prescriptions in the [Run 2](https://twiki.cern.ch/twiki/bin/view/CMS/LumiRecommendationsRun2) and [Run 3](https://twiki.cern.ch/twiki/bin/view/CMS/LumiRecommendationsRun3) Lumi POG recommendations. The coefficients already encode the Cholesky decomposition:
+
+| Nuisance (`lnN`) | 2016 | 2017 | 2018 | 2022 | 2023 |
+|---|---:|---:|---:|---:|---:|
+| `lumi_13TeV_1516_l` | 1.0118 | - | - | - | - |
+| `lumi_13TeV_151617_l` | 1.0004 | 1.0055 | - | - | - |
+| `lumi_13TeV_15161718_l` | 1.0035 | 1.0061 | 1.0084 | - | - |
+| `lumi_1` | - | - | - | 1.0138 | 1.0017 |
+| `lumi_2` | - | - | - | - | 1.0127 |
+
+The same 2016 coefficients apply to preVFP/postVFP, the same 2022 coefficients to 2022/2022EE, and the same 2023 coefficients to 2023/2023BPix. Each row is one shared parameter across all affected processes and channels. Run 2 and Run 3 luminosity parameters are treated as independent. Luminosity is applied to simulation-normalised signal, top pair, single top, and Others; QCD or DY also receive it only when their MC mode is selected. The data-driven QCD and DY predictions receive no direct luminosity response. All prescribed coefficients are retained even when `--ignore-rel-below` is used for other variations. Analysis-specific integrated luminosities and nominal yields are unchanged.
+
+The luminosity update changes the generator and checked-in datacards. Existing limit, fit, impact, and validation outputs predate this update and must be regenerated from the updated cards before being quoted for the new model.
+
+L1 prefiring remains independent between the Run2 eras. The existing generator-theory and top-mass correlations are unchanged.
 
 For data-driven QCD, the normalisation uncertainty is multiplicative (`lnN`), while the functional-form envelope is propagated as an additive Gaussian uncertainty on the absolute QCD yield through a constrained `rateParam`. Both families are independent by era.
 
