@@ -39,7 +39,15 @@ The conversion factors are in `preservation/alpha_internal_scaling.csv` and `pre
 
 ## Blinding and limit calculation
 
-The analysis remains blinded. Card observations are the nominal background-only Asimov expectations; no observed signal-region result is used for the expected limits.
+The analysis remains blinded. Each card observation is the **unrounded prefit background-only expectation**, evaluated with signal strength zero and nominal nuisance values. The expectation includes the simulated tt, ST, and Others yields and the data-driven DY and QCD yields **after applying the initial rateParam values**. It is neither a sum of MC backgrounds alone nor a simple sum of the entries in the `rate` row.
+
+For QCD, the base `rate` is 1 and the QCD rateParam initial value is the nominal absolute yield. For a positive DY source, the base `rate` is the light-jet source yield and the DY rateParam initial value is the aMC normalisation factor. A zero-source DY channel uses its additive rateParam with nominal value zero. Multiplicative lnN modifiers are unity at their nominal nuisance values.
+
+For example, in the M20 2016preVFP channel, DY is `831.221959608 * 0.140454398 = 116.748779941` events and QCD is `1 * 14.184085883` events. Including tt, ST, and Others gives `313.669289461` events, which is now written as the observation. Earlier snapshots rounded this value to `314`; those rounded observations were background-derived placeholders rather than exact Asimov observations.
+
+Blind card generation does not open the signal-region `data.root` histogram. Data-driven control-region inputs remain part of the background prediction. In unblind mode, a missing signal-region data input raises an error instead of silently substituting an Asimov observation.
+
+The expected-limit command uses `AsymptoticLimits --run blind`, which constructs a prefit background-only Asimov dataset without fitting the signal-region observation. Nominal FitDiagnostics and impact calculations use `-t -1 --expectSignal 0`. The separately documented S+B impact studies intentionally inject a nonzero signal. These execution settings are unchanged by the observation correction. Existing saved fit, limit, impact, and validation outputs have not been regenerated for the updated cards; they must be rerun in the Combine environment.
 
 The primary expected 95% CL upper limits use `AsymptoticLimits`. The additional M70 `HybridNew` test constructs toy test-statistic distributions and evaluates CLs on a **prefit background-only Asimov dataset**. It is not a calculation of the median of an ensemble of background-only toy limits and is not a coverage test.
 
