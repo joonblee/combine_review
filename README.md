@@ -173,6 +173,12 @@ unrounded background-only Asimov observations therefore remain unchanged for
 unchanged ROOT inputs. Both workflow and review helpers evaluate the formula at
 Gaussian parameter means when reconstructing nominal yields.
 
+Generated cards use `max(0.0,@0+@1)` to avoid an ambiguous `TMath::Max` overload
+in ROOT. Rebuild cards containing `max(0,@0+@1)` with `--stage cards` or
+`--stage all`; the QCD ROOT inputs need no rerun. The nominal-yield reader also
+supports the older formula for reviewing historical cards. Combine command
+failures stop immediately; adaptive rMax expansion uses collected limit output.
+
 **Regeneration status:** the checked-in cards under `input/` and `preservation/`,
 and the saved validation/limit outputs, still precede this statistical update.
 New uncertainties cannot be reconstructed for those cards without the original
