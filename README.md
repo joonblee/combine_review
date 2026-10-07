@@ -157,6 +157,10 @@ counting window before propagating covariance. It does not reconstruct or refit
 the SS function; fitted-template TH1 bin errors remain zero. NF-stat
 includes finite control-data and MC statistics, plus the shared DY NF-stat in the
 low-mass OS subtraction. SS-fit-stat is `sqrt(g^T C g)` with the transfer fixed.
+Covariance status 2 or 3 is accepted, including boundary solutions such as
+`n = 0`. Where needed, Minuit2 regularises the covariance to be positive definite.
+The saved matrix is used directly; its status, regularisation flag and boundary
+parameters are retained in ROOT metadata and reported by the workflow.
 Their SS-data cross-covariance is unknown, so the statistical width is the
 conservative first-order bound `sigma_NFstat + sigma_SSfitStat`. This is a
 Gaussian approximation, not a coverage test or a simultaneous control-region fit.
