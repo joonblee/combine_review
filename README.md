@@ -147,9 +147,14 @@ For data-driven QCD, the updated generator retains normalisation modelling as
 `CMS_NPS26009_stat_QCD_BJetOS_ERA`, a zero-centred additive Gaussian statistical
 shift. All three QCD nuisance families are independent between eras.
 
-`QCDStat/metadata` in each regenerated `NIsoMuon_SS_fit.root` provides the full
-SS-fit covariance and transfer-factor statistics. The counting-window integral
-is propagated before assigning errors; TH1 bin errors remain zero. NF-stat
+All NF/SS-fit statistical derivatives are calculated within SKPlotMaker's
+`qcd_bkg_estimation.py` during normal ROOT production. Each regenerated
+`NIsoMuon_SS_fit.root` contains `QCDStat/metadata` (`NPS26009_QCDStat_v2`) with
+the full SS-fit covariance and transfer-factor variances, plus `CentralYield`,
+`FitGradient_0` through `FitGradient_4`, and two `NFGradient_*` histograms under
+`QCDStat/`. The workflow sums these yield derivatives over the actual native-bin
+counting window before propagating covariance. It does not reconstruct or refit
+the SS function; fitted-template TH1 bin errors remain zero. NF-stat
 includes finite control-data and MC statistics, plus the shared DY NF-stat in the
 low-mass OS subtraction. SS-fit-stat is `sqrt(g^T C g)` with the transfer fixed.
 Their SS-data cross-covariance is unknown, so the statistical width is the
@@ -170,8 +175,9 @@ New uncertainties cannot be reconstructed for those cards without the original
 per-era ROOT inputs and SS covariance. Do not relabel those snapshots as the new
 model. The updated `scripts/limit_workflow.py` rejects older background contracts;
 regenerate per-era QCD ROOT files, rebuild cards, then rerun limits and reviews.
-Keep `scripts/qcd_stat_uncertainty.py` alongside the workflow. The naming
-dictionary now includes the new statistical parameter and formula modifier.
+No separate statistical module or execution is required. Older metadata-only
+ROOT files are rejected, so rerun the producer for this derivative storage format.
+The naming dictionary includes the statistical parameter and formula modifier.
 
 For a first check in the production NIsoMuon directory, rebuild cards only:
 
@@ -240,4 +246,3 @@ about 7.1% higher than the corresponding AsymptoticLimits result.
 The analysis remains blinded throughout these validation studies. Compact
 validation outputs are stored under `review_validation/M20/` and
 `review_validation/M70/`.
-
