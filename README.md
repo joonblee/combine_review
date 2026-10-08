@@ -145,11 +145,15 @@ For data-driven QCD, the updated generator retains normalisation modelling as
 `CMS_NPS26009_bckgNorm_QCD_BJetOS_ERA` (`lnN`) and the functional-form width as
 `CMS_NPS26009_bckgShape_QCD_BJetOS_ERA` (Gaussian `param`). It adds
 `CMS_NPS26009_stat_QCD_BJetOS_ERA`, a zero-centred additive Gaussian statistical
-shift. All three QCD nuisance families are independent between eras.
+shift. These three era-local QCD nuisance families remain independent between eras.
+For the default run-common MC transport there is also one
+`CMS_NPS26009_QCD_MCTransferStat_Run2` or `Run3` standard Gaussian, shared
+within that Run with a producer-derived yield coefficient.
 
 All NF/SS-fit statistical derivatives are calculated within SKPlotMaker's
 `qcd_bkg_estimation.py` during normal ROOT production. Each regenerated
-`NIsoMuon_SS_fit.root` contains `QCDStat/metadata` (`NPS26009_QCDStat_v2`) with
+`NIsoMuon_SS_fit.root` contains `QCDStat/metadata` (`NPS26009_QCDStat_v3` for
+run-common transport, v2 for legacy methods) with
 the full SS-fit covariance and transfer-factor variances, plus `CentralYield`,
 `FitGradient_0` through `FitGradient_4`, and two `NFGradient_*` histograms under
 `QCDStat/`. The workflow sums these yield derivatives over the actual native-bin
@@ -161,23 +165,35 @@ Covariance status 2 or 3 is accepted, including boundary solutions such as
 `n = 0`. Where needed, Minuit2 regularises the covariance to be positive definite.
 The saved matrix is used directly; its status, regularisation flag and boundary
 parameters are retained in ROOT metadata and reported by the workflow.
-Their SS-data cross-covariance is unknown, so the statistical width is the
-conservative first-order bound `sigma_NFstat + sigma_SSfitStat`. This is a
+Their SS-data cross-covariance is unknown, so common transport uses the
+era-local bound `sigma_lowNFstat + sigma_SSfitStat`, plus an independent common
+MC component shared within each Run. The local width excludes that MC component
+to avoid counting it twice. Legacy methods retain the full
+`sigma_NFstat + sigma_SSfitStat` bound. This is a
 Gaussian approximation, not a coverage test or a simultaneous control-region fit.
 
 The QCD base rate is 1. A single formula modifier computes
-`max(0, shape-yield parameter + statistical shift)`; norm modelling multiplies
+`max(0, shape-yield parameter + local statistical shift + common MC shift)`; norm modelling multiplies
 this yield. The shape parameter has the original nominal yield and envelope
 width. The separate statistical parameter has mean zero. Nominal yields and
 unrounded background-only Asimov observations therefore remain unchanged for
 unchanged ROOT inputs. Both workflow and review helpers evaluate the formula at
 Gaussian parameter means when reconstructing nominal yields.
 
-Generated cards use `max(0.0,@0+@1)` to avoid an ambiguous `TMath::Max` overload
+Common-transfer cards use `max(0.0,@0+@1+sigmaMC*@2)`, while legacy cards use
+`max(0.0,@0+@1)`, to avoid an ambiguous `TMath::Max` overload
 in ROOT. Rebuild cards containing `max(0,@0+@1)` with `--stage cards` or
 `--stage all`; the QCD ROOT inputs need no rerun. The nominal-yield reader also
 supports the older formula for reviewing historical cards. Combine command
 failures stop immediately; adaptive rMax expansion uses collected limit output.
+
+Update SKPlotMaker, validate with
+`qcd_bkg_estimation.py --mode ss-data --year Run2+3 --validate-qcd-double-ratio`,
+and regenerate all affected era ROOT templates before rebuilding cards for the
+new common transport. The validation tests weighted-MC statistical compatibility,
+not equality or detector/generator modelling. The workflow rejects mixed/stale
+common-fit fingerprints within a Run and older card contracts. ROOT-free card
+tests run with `python3 -m unittest discover -s scripts/tests -v`.
 
 **Regeneration status:** the checked-in cards under `input/` and `preservation/`,
 and the saved validation/limit outputs, still precede this statistical update.
