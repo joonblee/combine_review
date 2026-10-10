@@ -91,6 +91,30 @@ python3 limit_workflow.py \
 
 `--target runs` builds Run2, Run3, and Run2Run3. The upstream histogram production is not reproduced by this review repository alone. `scripts/combine_review.py` operates on existing production cards, and `scripts/review.sh` is a server-specific driver, not a portable entry point for this repository layout.
 
+
+For limits only, `--jobs` caps concurrent mass/target jobs across all selected
+targets (default: 1). In the production `NIsoMuon` directory, run blind and
+unblind sequentially with up to 40 workers:
+
+```bash
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+for mode in blind unblind; do
+  python3 -u limit_workflow.py \
+    --stage all --target runs --parameter alpha \
+    --mode "$mode" --task limits --jobs 40 \
+    --sigfit-dir ./sigfit_inputs \
+    --qcd-method data-driven --dy-method data-driven \
+    --r-max 100 --strict >"limits_${mode}.log" 2>&1 || break
+done
+```
+
+With all thirteen masses and `--target runs`, each mode has 39 jobs.
+Each unblind card runs its observed and blind-expected fits sequentially.
+Combine output is saved separately to
+`limit_outputs/alpha/<mode>/<target>/combine_*_attempt*.log`;
+collection and plotting run once per target after the batch succeeds.
+`--jobs > 1` applies to `--task limits`; impacts use `--impact-parallel`.
+
 A minimal M20 expected-limit calculation from the preserved card, after initialising Combine, is
 
 ```bash
