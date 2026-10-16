@@ -56,9 +56,41 @@ The plotting log still reports six normalised-pull calculation warnings at
 M70. The corresponding nuisance fit intervals and r impacts are present and
 finite in the repaired JSON.
 
-## Existing bias results
+## Original bias results and verified replacements
 
 For injections of 0, 1 and 2 times the expected limit, the M20 summaries read
 493/500, 491/500 and 493/500 best-fit entries; M70 reads 500/500 for each.
 The detailed bias-fit logs retain the failed-fit/interval warnings.
 The S+B impact repair did not rerun the bias tests.
+
+Subsequent saved-toy bias repairs are preserved separately. Use these final
+snapshots for the current bias summaries:
+
+| Mass [GeV] | Final snapshot | Repaired toys | Final toys per injection |
+|---|---|---:|---:|
+| 20 | [bias_M20_verified_7x_fn8sj](../bias_M20_verified_7x_fn8sj/) | 32 (12/12/8) | 500/500/500 |
+| 70 | [bias_M70_verified_avf0d2lz](../bias_M70_verified_avf0d2lz/) | 4 (0/3/1) | 500/500/500 |
+
+Counts are ordered by injections of 0, 1 and 2 times the expected limit.
+The four M70 repairs replace failed lower endpoints reported at rMin=-2;
+all original M70 best-fit rows were present. The final merged files contain
+exactly toy IDs 1 through 500 in each ensemble, with no missing or duplicate
+toys. All stored intervals are finite, ordered and interior to the original
+fit range.
+
+Each repaired fit passes status=0, covQual>=2 and EDM<=0.001 screening.
+Independent conditional profiles verify both 68% endpoints within 0.01 of the
+target deltaNLL=0.49447324. At M20, 27 profiles passed independent global-refit
+best-r stability checks; the remaining five received explicit saved-centre
+conditional checks within 0.001 in deltaNLL. All four M70 repairs received
+the explicit saved-centre check as well.
+The original workspaces and toy datasets are fingerprinted in input_manifest.json;
+run_manifest.json records executed commands. M20 r0/toy_0269 was additionally
+refined before its final profile checks. Two M20 repairs have covQual=2;
+the other 30 M20 repairs and all four M70 repairs have covQual=3.
+
+Mean bias, Monte Carlo standard error and directional profile pull statistics
+are stored in each final bias_summary_Run2Run3_M*.json. These checks establish
+numerical consistency of the repaired profiles and completeness of the merged
+intervals. They are not a coverage test. Per-toy saved fit status is unavailable
+for the unrepaired original fits; those intervals received structural checks.
