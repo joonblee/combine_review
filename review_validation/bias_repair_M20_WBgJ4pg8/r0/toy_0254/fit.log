@@ -1,0 +1,16 @@
+ <<< Combine >>> 
+ <<< v11.0.0 >>>
+>>> Random number generator seed is 123456
+>>> Method used is MultiDimFit
+Set Range of Parameter r To : (-50,100)
+Set Default Value of Parameter r To : 0
+Set Range of Parameter r To : (-50,100)
+Doing initial fit: 
+
+ --- MultiDimFit ---
+best fit parameter values and profile-likelihood uncertainties: 
+   r :    +3.276   -6.804/+8.228 (68%)
+mean   expected limit: r < 2.60732e-316 @ 95%CL (1 toyMC)
+median expected limit: r < 2.60732e-316 @ 95%CL (1 toyMC)
+   68% expected band : 2.60732e-316 < r < 2.60732e-316
+   95% expected band : 2.60732e-316 < r < 2.60732e-316

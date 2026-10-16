@@ -1,0 +1,325 @@
+{
+  "passed": false,
+  "n_expected_retries": 32,
+  "n_passed": 1,
+  "results": [
+    {
+      "injected_r": 0.0,
+      "toy": 28,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 35,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 107,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 175,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 254,
+      "passed": true,
+      "issues": [],
+      "interval": [
+        -3.5277600288391113,
+        3.276266574859619,
+        11.503990173339844
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 3.9930494077715724e-05
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 269,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 317,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 381,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        -50.0,
+        0.11409175395965576,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 8.150210386233833e-05
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 382,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 395,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 442,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        -50.0,
+        24.460865020751953,
+        32.349647521972656
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 1.0671217936961675e-07
+    },
+    {
+      "injected_r": 0.0,
+      "toy": 462,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        -50.0,
+        13.939717292785645,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 0.00012708419344849902
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 87,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 186,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 221,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 247,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 270,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        19.585399627685547,
+        27.2501163482666,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 6.490960715504183e-08
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 314,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 318,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 419,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 464,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 474,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 488,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 15.5625,
+      "toy": 489,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        16.654563903808594,
+        26.48928451538086,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 1.050607114323441e-07
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 61,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 89,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 197,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 266,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 439,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 459,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        -50.0,
+        47.36345672607422,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 0.00012107351435289224
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 464,
+      "passed": false,
+      "issues": [
+        "Missing or ambiguous ROOT outputs"
+      ]
+    },
+    {
+      "injected_r": 31.125,
+      "toy": 468,
+      "passed": false,
+      "issues": [
+        "Collapsed, unordered or capped interval"
+      ],
+      "interval": [
+        32.80396270751953,
+        42.59756088256836,
+        100.0
+      ],
+      "status": 0,
+      "covQual": 3,
+      "EDM": 6.408837514229785e-08
+    }
+  ]
+}
