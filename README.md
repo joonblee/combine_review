@@ -8,6 +8,15 @@ All thirteen Run2Run3 mass points are under preservation/Run2Run3/.
 The production commit, card hashes and impact provenance are recorded in
 preservation/snapshot_manifest.json.
 
+The snapshot metadata is synchronised with the organised production layout at
+[higgs_combine 7722b21](https://github.com/joonblee/higgs_combine/commit/7722b2145278644b88fed0e8f54d5781897e39c1).
+Final B-only impacts are in `NIsoMuon/limit_outputs/alpha/blind/<target>/`;
+final verified bias records are in
+`NIsoMuon/review_outputs/Run2Run3/M<mass>/bias/verified/`.
+Path and checksum metadata were updated after directory consolidation; fitted
+values, toy intervals and PDFs are unchanged. Historical diagnostics retain
+their original directory labels and command logs.
+
 Completed cards require no external histogram ROOT files or custom physics
 model. Combine fits internal r. Physical alpha equals r multiplied by the
 mass- and target-dependent alpha_internal_unit stored in

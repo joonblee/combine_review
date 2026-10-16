@@ -14,7 +14,7 @@
       "status": 0,
       "covQual": 2,
       "EDM": 0.0007013721401037238,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0028",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0028",
       "endpoints": [
         {
           "side": "low",
@@ -45,7 +45,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 3.452026295904906e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r0/toy_0035",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r0/toy_0035",
       "endpoints": [
         {
           "side": "low",
@@ -76,7 +76,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.5523288063671936e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0107",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0107",
       "endpoints": [
         {
           "side": "low",
@@ -107,7 +107,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.2127712425916555e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r0/toy_0175",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r0/toy_0175",
       "endpoints": [
         {
           "side": "low",
@@ -138,7 +138,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 0.00013369196994542513,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0254",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0254",
       "endpoints": [
         {
           "side": "low",
@@ -169,7 +169,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 6.548600712206305e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r0/toy_0317",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r0/toy_0317",
       "endpoints": [
         {
           "side": "low",
@@ -200,7 +200,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 0.0002001803140832771,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0381",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0381",
       "endpoints": [
         {
           "side": "low",
@@ -231,7 +231,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 2.7645871027095813e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r0/toy_0382",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r0/toy_0382",
       "endpoints": [
         {
           "side": "low",
@@ -262,7 +262,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 2.688342220596433e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r0/toy_0395",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r0/toy_0395",
       "endpoints": [
         {
           "side": "low",
@@ -293,7 +293,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.2273424160868344e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0442",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0442",
       "endpoints": [
         {
           "side": "low",
@@ -324,7 +324,7 @@
       "status": 0,
       "covQual": 2,
       "EDM": 0.00010275595007816142,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r0/toy_0462",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r0/toy_0462",
       "endpoints": [
         {
           "side": "low",
@@ -355,7 +355,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 2.439845895351013e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0087",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0087",
       "endpoints": [
         {
           "side": "low",
@@ -386,7 +386,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.3417748117236827e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0186",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0186",
       "endpoints": [
         {
           "side": "low",
@@ -417,7 +417,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 2.6718425479409137e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0221",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0221",
       "endpoints": [
         {
           "side": "low",
@@ -448,7 +448,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 3.470911494360606e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0247",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0247",
       "endpoints": [
         {
           "side": "low",
@@ -479,7 +479,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 6.0356884859841304e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0314",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0314",
       "endpoints": [
         {
           "side": "low",
@@ -510,7 +510,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 3.81143058249237e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0419",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0419",
       "endpoints": [
         {
           "side": "low",
@@ -541,7 +541,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 6.5076471360820056e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0464",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0464",
       "endpoints": [
         {
           "side": "low",
@@ -572,7 +572,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 8.912310310010476e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0474",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0474",
       "endpoints": [
         {
           "side": "low",
@@ -603,7 +603,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 2.8294137730569067e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0488",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r15p5625/toy_0488",
       "endpoints": [
         {
           "side": "low",
@@ -634,7 +634,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 6.6915791148869145e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0489",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0489",
       "endpoints": [
         {
           "side": "low",
@@ -665,7 +665,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.5132821180247415e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0061",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0061",
       "endpoints": [
         {
           "side": "low",
@@ -696,7 +696,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 3.663874992899649e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0089",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0089",
       "endpoints": [
         {
           "side": "low",
@@ -727,7 +727,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 4.9379758572150125e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0197",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0197",
       "endpoints": [
         {
           "side": "low",
@@ -758,7 +758,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.1897734394879797e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0266",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0266",
       "endpoints": [
         {
           "side": "low",
@@ -789,7 +789,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.6016092005063816e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0439",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_poiseed.39z1r77d/r31p125/toy_0439",
       "endpoints": [
         {
           "side": "low",
@@ -820,7 +820,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 1.7805820114397467e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0459",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0459",
       "endpoints": [
         {
           "side": "low",
@@ -851,7 +851,7 @@
       "status": 0,
       "covQual": 3,
       "EDM": 3.1511708221315974e-05,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.d4jw2m6v/refined/r0/toy_0269",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_M20_verified.d4jw2m6v/refined/r0/toy_0269",
       "endpoints": [
         {
           "r": -8.777796745300293,
@@ -863,19 +863,19 @@
               "strategy": 1,
               "tolerance": 0.01,
               "deltaNLL": 0.4943770468235016,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/low/s1_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/low/s1_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.01,
               "deltaNLL": 0.49436473846435547,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/low/s2_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/low/s2_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.1,
               "deltaNLL": 0.49437060952186584,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/low/s2_t0.1"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/low/s2_t0.1"
             }
           ],
           "failed_attempts": [],
@@ -892,19 +892,19 @@
               "strategy": 1,
               "tolerance": 0.01,
               "deltaNLL": 0.4945054054260254,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/high/s1_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/high/s1_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.01,
               "deltaNLL": 0.4945276975631714,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/high/s2_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/high/s2_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.1,
               "deltaNLL": 0.4946118891239166,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r0/toy_0269/high/s2_t0.1"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r0/toy_0269/high/s2_t0.1"
             }
           ],
           "failed_attempts": [],
@@ -922,13 +922,13 @@
             "strategy": 1,
             "tolerance": 0.01,
             "deltaNLL": 3.836930773104541e-13,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r0/toy_0269/s1_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r0/toy_0269/s1_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.1,
             "deltaNLL": 3.836930773104541e-13,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r0/toy_0269/s2_t0.1"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r0/toy_0269/s2_t0.1"
           }
         ],
         "failed_attempts": [
@@ -947,14 +947,14 @@
       "status": 0,
       "covQual": 3,
       "EDM": 4.118296844474009e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0270",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0270",
       "endpoints": [
         {
           "r": 19.582721710205078,
           "deltaNLL": 0.49477508664131165,
           "refitted_best_r": 27.249210357666016,
           "best_r_shift": 0.0002574920654296875,
-          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.d4jw2m6v/endpoints/r15p5625/toy_0270/low",
+          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_M20_verified.d4jw2m6v/endpoints/r15p5625/toy_0270/low",
           "reused": true,
           "saved_center_deltaNLL": -4.117881417187164e-06,
           "global_refit_deltaNLL": -3.365976916e-06,
@@ -971,19 +971,19 @@
               "strategy": 1,
               "tolerance": 0.01,
               "deltaNLL": 0.49476975202560425,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r15p5625/toy_0270/high/s1_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r15p5625/toy_0270/high/s1_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.01,
               "deltaNLL": 0.4947737157344818,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r15p5625/toy_0270/high/s2_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r15p5625/toy_0270/high/s2_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.1,
               "deltaNLL": 0.4947737157344818,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r15p5625/toy_0270/high/s2_t0.1"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r15p5625/toy_0270/high/s2_t0.1"
             }
           ],
           "failed_attempts": [],
@@ -1001,19 +1001,19 @@
             "strategy": 1,
             "tolerance": 0.01,
             "deltaNLL": -3.336545205456787e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0270/s1_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0270/s1_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.01,
             "deltaNLL": -4.117881417187164e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0270/s2_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0270/s2_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.1,
             "deltaNLL": -4.117881417187164e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0270/s2_t0.1"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0270/s2_t0.1"
           }
         ],
         "failed_attempts": []
@@ -1030,14 +1030,14 @@
       "status": 0,
       "covQual": 3,
       "EDM": 0.00012419288381169968,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0318",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r15p5625/toy_0318",
       "endpoints": [
         {
           "r": 5.9803009033203125,
           "deltaNLL": 0.4945710599422455,
           "refitted_best_r": 15.799959182739258,
           "best_r_shift": 0.032784461975097656,
-          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.d4jw2m6v/endpoints/r15p5625/toy_0318/low",
+          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_M20_verified.d4jw2m6v/endpoints/r15p5625/toy_0318/low",
           "reused": true,
           "saved_center_deltaNLL": -2.0092164049856365e-05,
           "global_refit_deltaNLL": -2.434261795e-05,
@@ -1054,13 +1054,13 @@
               "strategy": 1,
               "tolerance": 0.01,
               "deltaNLL": 0.494737833738327,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r15p5625/toy_0318/high/s1_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r15p5625/toy_0318/high/s1_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.01,
               "deltaNLL": 0.4947235584259033,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r15p5625/toy_0318/high/s2_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r15p5625/toy_0318/high/s2_t0.01"
             }
           ],
           "failed_attempts": [
@@ -1080,19 +1080,19 @@
             "strategy": 1,
             "tolerance": 0.01,
             "deltaNLL": -1.894677188829519e-05,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0318/s1_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0318/s1_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.01,
             "deltaNLL": -1.8953571270685643e-05,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0318/s2_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0318/s2_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.1,
             "deltaNLL": -2.0092164049856365e-05,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r15p5625/toy_0318/s2_t0.1"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r15p5625/toy_0318/s2_t0.1"
           }
         ],
         "failed_attempts": []
@@ -1109,14 +1109,14 @@
       "status": 0,
       "covQual": 3,
       "EDM": 0.00021755684793159559,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0464",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0464",
       "endpoints": [
         {
           "r": 25.029800415039062,
           "deltaNLL": 0.49454134702682495,
           "refitted_best_r": 34.46218490600586,
           "best_r_shift": 0.0165252685546875,
-          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.d4jw2m6v/endpoints/r31p125/toy_0464/low",
+          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_M20_verified.d4jw2m6v/endpoints/r31p125/toy_0464/low",
           "reused": true,
           "saved_center_deltaNLL": -9.272187071474036e-07,
           "global_refit_deltaNLL": -3.292141464e-06,
@@ -1133,19 +1133,19 @@
               "strategy": 1,
               "tolerance": 0.01,
               "deltaNLL": 0.49418655037879944,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r31p125/toy_0464/high/s1_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r31p125/toy_0464/high/s1_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.01,
               "deltaNLL": 0.4941900074481964,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r31p125/toy_0464/high/s2_t0.01"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r31p125/toy_0464/high/s2_t0.01"
             },
             {
               "strategy": 2,
               "tolerance": 0.1,
               "deltaNLL": 0.4941002428531647,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r31p125/toy_0464/high/s2_t0.1"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r31p125/toy_0464/high/s2_t0.1"
             }
           ],
           "failed_attempts": [],
@@ -1163,19 +1163,19 @@
             "strategy": 1,
             "tolerance": 0.01,
             "deltaNLL": -8.283013812615536e-07,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0464/s1_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0464/s1_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.01,
             "deltaNLL": -9.272187071474036e-07,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0464/s2_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0464/s2_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.1,
             "deltaNLL": -9.272187071474036e-07,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0464/s2_t0.1"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0464/s2_t0.1"
           }
         ],
         "failed_attempts": []
@@ -1192,14 +1192,14 @@
       "status": 0,
       "covQual": 3,
       "EDM": 7.435809386403087e-06,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0468",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_repair_M20_fallback.7jr2691k/r31p125/toy_0468",
       "endpoints": [
         {
           "r": 32.80648422241211,
           "deltaNLL": 0.49422594904899597,
           "refitted_best_r": 42.59507369995117,
           "best_r_shift": 1.52587890625e-05,
-          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.d4jw2m6v/endpoints/r31p125/toy_0468/low",
+          "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/provenance/bias_M20_verified.d4jw2m6v/endpoints/r31p125/toy_0468/low",
           "reused": true,
           "saved_center_deltaNLL": -7.421984719258035e-06,
           "global_refit_deltaNLL": -5.937971736e-06,
@@ -1216,7 +1216,7 @@
               "strategy": 2,
               "tolerance": 0.1,
               "deltaNLL": 0.49439167976379395,
-              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/endpoints/r31p125/toy_0468/high/s2_t0.1"
+              "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/endpoints/r31p125/toy_0468/high/s2_t0.1"
             }
           ],
           "failed_attempts": [
@@ -1237,19 +1237,19 @@
             "strategy": 1,
             "tolerance": 0.01,
             "deltaNLL": -5.945221801084699e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0468/s1_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0468/s1_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.01,
             "deltaNLL": -7.421984719258035e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0468/s2_t0.01"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0468/s2_t0.01"
           },
           {
             "strategy": 2,
             "tolerance": 0.1,
             "deltaNLL": -7.421984719258035e-06,
-            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/bias_M20_verified.7x_fn8sj/centers/r31p125/toy_0468/s2_t0.1"
+            "directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/review_outputs/Run2Run3/M20/bias/verified/centers/r31p125/toy_0468/s2_t0.1"
           }
         ],
         "failed_attempts": []

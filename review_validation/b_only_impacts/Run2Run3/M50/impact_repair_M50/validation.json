@@ -32,7 +32,7 @@
       100.0
     ],
     "strategy": 2,
-    "log": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_updated/alpha/blind/Run2Run3/impact_poi_repair_M50/attempt1/initial_fit.log"
+    "log": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs/alpha/blind/Run2Run3/impact_poi_repair_M50/attempt1/initial_fit.log"
   },
   "expected_signal": 0.0,
   "fit_name": ".Impacts_Run2Run3_alpha_M50",

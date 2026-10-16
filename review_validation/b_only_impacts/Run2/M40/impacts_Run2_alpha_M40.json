@@ -15,7 +15,7 @@
       3.209238430557093e-17,
       1.3404837846755981
     ],
-    "log": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_updated/alpha/blind/Run2/impact_poi_repair_M40/attempt2/initial_fit.log",
+    "log": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs/alpha/blind/Run2/impact_poi_repair_M40/attempt2/initial_fit.log",
     "passed": true,
     "previous_fit": [
       -1.4401483535766602,
