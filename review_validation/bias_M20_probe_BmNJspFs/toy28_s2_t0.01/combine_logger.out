@@ -1,0 +1,278 @@
+FitterAlgoBase.cc[122] : (in function: applyOptionsBase) - Setting robust fit options to Tolerance=0.01 / Strategy=2 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer if these options were not specified)
+FitterAlgoBase.cc[250] : (in function: doFit) - do first minimization
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0661939+/-0.239823
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[254] : (in function: doFit) - Minimized in 0.698950 seconds (0.680000 CPU time)
+FitterAlgoBase.cc[258] : (in function: doFit) - FINAL NLL - NLL0 VALUE = -24.33632929
+
+FitterAlgoBase.cc[366] : (in function: doFit) - Running RobustFit for POI r. Configured with strategy 2  
+FitterAlgoBase.cc[412] : (in function: findCrossing) - Searching for crossing at nll = 37.7117, in the interval -2.71471 < r < 100
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.066495+/-0.164254
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[433] : (in function: findCrossing) -  r lvl-here lvl-there 	stepping 
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0735831+/-0.0930487
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  7.556758    -0.36038  +0.49448    10.271472
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0701501+/-0.11108
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  0.366728    +0.40900  -0.36038    3.081441
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0704413+/-0.122107
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  3.448169    +0.17997  +0.40900    3.081441
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  6.529611    -0.19857  +0.17997    3.081441
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0777735+/-0.13774
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  4.372602    +0.08295  -0.19857    0.924432
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0792518+/-0.210934
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.297034    -0.02814  +0.08295    0.924432
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  4.649932    +0.05111  -0.02814    0.277330
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0777707+/-0.0956848
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  4.927261    +0.01800  +0.05111    0.277330
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0778697+/-0.129261
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.204591    -0.01639  +0.01800    0.277330
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0778646+/-0.138025
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.010460    +0.00782  -0.01639    0.083199
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.077887+/-0.100659
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.093659    -0.00248  +0.00782    0.083199
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0779474+/-0.19097
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.035420    +0.00474  -0.00248    0.024960
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0780986+/-0.293777
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.060380    +0.00165  +0.00474    0.024960
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0781324+/-0.149056
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.085339    -0.00145  +0.00165    0.024960
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.067867    +0.00072  -0.00145    0.007488
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.075355    -0.00020  +0.00072    0.007488
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.070114    +0.00045  -0.00020    0.002246
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0790134+/-0.0889864
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.072360    +0.00017  +0.00045    0.002246
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.074607    -0.00011  +0.00017    0.002246
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073034    +0.00008  -0.00011    0.000674
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073708    +0.00000  +0.00008    0.000674
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.074382    -0.00008  +0.00000    0.000674
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073910    -0.00002  -0.00008    0.000202
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073769    -0.00001  -0.00002    0.000061
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073726    -0.00000  -0.00001    0.000018
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073713    +0.00000  -0.00000    0.000005
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  5.073719    -0.00000  +0.00000    0.000005
+FitterAlgoBase.cc[412] : (in function: findCrossing) - Searching for crossing at nll = 37.7117, in the interval -2.71471 < r < -50
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.066495+/-0.164254
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[433] : (in function: findCrossing) -  r lvl-here lvl-there 	stepping 
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -7.443242    +0.30126  +0.49448    -4.728529
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0641029+/-0.111122
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -12.171771    -0.19103  +0.30126    -4.728529
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0649834+/-0.11582
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -8.861801    +0.17847  -0.19103    -1.418559
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0650376+/-0.404494
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.280360    +0.03385  +0.17847    -1.418559
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[239] : (in function: improveOnce) - [WARNING] Minimization finished with status 1 (covariance matrix forced positive definite), this could indicate a problem with the minimum.
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=1
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0576578+/-0.957788
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -11.698918    -0.13117  +0.03385    -1.418559
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.065961+/-0.0987422
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.705927    -0.01338  -0.13117    -0.425568
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0653218+/-0.76472
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.408030    +0.01987  -0.01338    -0.127670
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0670849+/-0.0940065
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.535700    +0.00574  +0.01987    -0.127670
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0670315+/-0.12336
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.663370    -0.00857  +0.00574    -0.127670
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0670328+/-0.121195
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.574001    +0.00146  -0.00857    -0.038301
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0671067+/-0.144419
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.612302    -0.00282  +0.00146    -0.038301
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0671032+/-0.131214
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.585491    +0.00018  -0.00282    -0.011490
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.0670943+/-0.119079
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.596982    -0.00111  +0.00018    -0.011490
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.588939    -0.00021  -0.00111    -0.003447
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.586526    +0.00006  -0.00021    -0.001034
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.587560    -0.00005  +0.00006    -0.001034
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=0
+CascadeMinimizer.cc[246] : (in function: improveOnce) - Minimization success! status=0
+FitterAlgoBase.cc[466] : (in function: findCrossing) -  -10.586836    +0.00003  -0.00005    -0.000310
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=-1
+CascadeMinimizer.cc[247] : (in function: improveOnce) - Minimization ended with latest status != 0 or 1
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.06705+/-5.02138
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=-1
+CascadeMinimizer.cc[247] : (in function: improveOnce) - Minimization ended with latest status != 0 or 1
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.06705+/-5.02106
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=-1
+CascadeMinimizer.cc[247] : (in function: improveOnce) - Minimization ended with latest status != 0 or 1
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.06705+/-5.0209
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=-1
+CascadeMinimizer.cc[247] : (in function: improveOnce) - Minimization ended with latest status != 0 or 1
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.06705+/-5.02082
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+CascadeMinimizer.cc[197] : (in function: improveOnce) - Minimization configured with Type=Minuit2, Algo=Migrad, strategy=2, tolerance=0.01
+CascadeMinimizer.cc[242] : (in function: improveOnce) - Minimization finished with status=-1
+CascadeMinimizer.cc[247] : (in function: improveOnce) - Minimization ended with latest status != 0 or 1
+utils.cc[1073] : (in function: anyParameterAtBoundaries) - [WARNING] Found parameter CMS_NPS26009_bckgShape_QCD_BJetOS_2022EE at boundary (within ~1sigma): 0.06705+/-5.02078
+CascadeMinimizer.cc[511] : (in function: minimize) - [WARNING] After fit, some parameters are found at the boundary (within ~1sigma)
+FitterAlgoBase.cc[453] : (in function: findCrossing) - Maximum failed steps (max=5) reached and minimization failed at r = -10.5869 
