@@ -23,15 +23,29 @@ after evaluating rateParams. Expected limits use AsymptoticLimits --run blind.
 - Current M20/M70 additional review:
   review_validation/updated_blind_P2ejoE9l/.
   Its README documents validation, scans, correlations, HybridNew,
-  repaired S+B impacts and bias-study limitations.
+  repaired S+B impacts and the original bias results.
+- Final M20 bias intervals and summaries:
+  [review_validation/bias_M20_verified_7x_fn8sj/](review_validation/bias_M20_verified_7x_fn8sj/).
+- Final M70 bias intervals and summaries:
+  [review_validation/bias_M70_verified_avf0d2lz/](review_validation/bias_M70_verified_avf0d2lz/).
 - Other review snapshots are historical.
 
 Production impact files ending in _internal.json use internal r.
 Other production impact JSONs and PDFs use physical alpha.
 The additional-review S+B impacts retain internal r.
 
-The M20 bias studies contain fewer than 500 readable best fits per injection.
-Their summaries and logs retain the failures. Not every toy fit converged.
+The final bias snapshots contain 500 distinct toys with finite, ordered,
+interior 68% profile intervals per injection at both masses. They replace
+32 problematic M20 toy fits and four problematic M70 toy fits using the
+original saved datasets and workspaces. Each repaired fit passes saved-fit
+quality screening and independent endpoint profile checks. The original
+results and failure logs remain as provenance; use the final snapshots above
+for the repaired summaries.
+
+The final JSON summaries report mean bias, its Monte Carlo standard error,
+and directional pull mean and width. Numerical repair is not a coverage test
+or a demonstration of zero bias. Original per-toy fit status is unavailable
+for the unrepaired ensemble fits; those intervals received structural checks.
 
 ## Minimal expected-limit reproduction
 
@@ -52,7 +66,9 @@ After initialising CombineHarvester:
     python3 systematics/check_names.py --input input/datacard_M20_Run2Run3.txt --systematics-dict input/systematics.yml --global-dict systematics/systematics_master.yml --analysis NPS26009
 
 The nuisance dictionary is input/systematics.yml.
-Run this check on the updated snapshot before submitting the review.
+The updated M20/M70 naming checks passed; their logs are preserved under
+review_validation/updated_blind_P2ejoE9l/logs/check_names_M*.log.
+Rerun the check if the submitted cards or dictionaries change.
 
 ## Execution and CI
 
