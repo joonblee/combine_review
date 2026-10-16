@@ -1,14 +1,14 @@
-# Repaired background-only Asimov impacts
+# Current background-only Asimov impacts
 
-Blind M30 and M70 results for Run2, Run3 and Run2Run3.
-Production source: joonblee/higgs_combine commit 2da3e69.
+Targets: Run2, Run3 and Run2Run3.
+Masses: 12,15,20,25,30,35,40,45,50,55,60,65,70 GeV.
 
-Files ending in _internal.json retain internal r.
-The other impact JSON files and PDFs use physical alpha_qZp.
-Each result includes its datacard and validation.json.
-QCD shape boundary endpoints come from conditional fits.
+Each target/mass directory contains its production card, final PDF,
+physical-alpha JSON and internal-r JSON.
 
-Nuisance completeness:
-Run2: M30 77/77; M70 77/77.
-Run3: M30 72/72; M70 70/70.
-Run2Run3: M30 142/142; M70 140/140.
+Nested impact_repair_M*/ and impact_poi_repair_M*/ directories contain
+available validation reports copied from the selected production output.
+Previously retained top-level validation.json files are historical.
+
+Source directories, hashes and production commit are recorded in
+preservation/snapshot_manifest.json.
