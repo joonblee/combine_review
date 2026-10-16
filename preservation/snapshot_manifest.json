@@ -20,10 +20,12 @@
     {
       "target": "Run2",
       "mass": 12,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs/alpha/blind/Run2",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_updated/alpha/blind/Run2",
       "card_sha256": "a5734f78036b556339eceb13944925cfe374a48521da8c9d6aef6a6c77883420",
-      "internal_json_sha256": "f1f7aa28bd9a034421bb906e4539feffa640e8ee08e5b0497ae16e42d9fecb20",
-      "validation_directories": []
+      "internal_json_sha256": "92fb35debe23f7837d9fab7bffac08ded0396e14f32eec1e2799ae0321b762df",
+      "validation_directories": [
+        "impact_repair_M12"
+      ]
     },
     {
       "target": "Run2",
@@ -149,10 +151,12 @@
     {
       "target": "Run3",
       "mass": 12,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs/alpha/blind/Run3",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_updated/alpha/blind/Run3",
       "card_sha256": "95b4dff5e938b1e9a31f2a939cec8e283571d474ea16a09c24336eb71c180524",
-      "internal_json_sha256": "54f30166c2da415e5d4fedb8dba6bdfc5890539eda0705051a7ed539f24bd8f0",
-      "validation_directories": []
+      "internal_json_sha256": "8676364c43218d73a4990dcd99b479e96c3a3221ba2c3455f494ed1be59f64e9",
+      "validation_directories": [
+        "impact_repair_M12"
+      ]
     },
     {
       "target": "Run3",
@@ -278,10 +282,12 @@
     {
       "target": "Run2Run3",
       "mass": 12,
-      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs/alpha/blind/Run2Run3",
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_updated/alpha/blind/Run2Run3",
       "card_sha256": "d64143810063e00d6d4e1cbf50cfdce7617e9f6c5229ba8cc9dfe92528578dce",
-      "internal_json_sha256": "0dbde56416917dda67652ff35b68f341bd32c85a1454d08883d20f383d22261a",
-      "validation_directories": []
+      "internal_json_sha256": "d16c5c21dde4080eb39d87c57628537040a3ae3a9cf02c592f6df43e341f41ea",
+      "validation_directories": [
+        "impact_repair_M12"
+      ]
     },
     {
       "target": "Run2Run3",
@@ -406,5 +412,70 @@
     }
   ],
   "additional_review": "review_validation/updated_blind_P2ejoE9l",
-  "additional_review_card_and_limit_hashes_matched": true
+  "additional_review_card_and_limit_hashes_matched": true,
+  "m12_negative_r_update": {
+    "Run2": {
+      "passed": true,
+      "target": "Run2",
+      "mass": 12,
+      "expected_signal": 0,
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_M12_negative.jr1_7y6v/alpha/blind/Run2",
+      "card_sha256": "a5734f78036b556339eceb13944925cfe374a48521da8c9d6aef6a6c77883420",
+      "workspace_sha256": "32111157a476764c3efe504cf9dca8941d373b572310b57b143da0a2b6e66b0a",
+      "internal_json_sha256": "92fb35debe23f7837d9fab7bffac08ded0396e14f32eec1e2799ae0321b762df",
+      "physical_json_sha256": "314f36447f66c5dfe38de222fab3cca16309f5c4701c7bf118a3a1b161c6547c",
+      "pdf_sha256": "d51c3db394b6c2c3531301bb7b96de35302fb4842e41b9d0ecf8297f7c22a775",
+      "initial_poi": [
+        -15.029610633850098,
+        7.077671781985373e-16,
+        14.818000793457031
+      ],
+      "rmin": -50.0,
+      "rmax": 100.0,
+      "n_nuisances": 77,
+      "alpha_internal_unit": 2.538046243362333e-07
+    },
+    "Run3": {
+      "passed": true,
+      "target": "Run3",
+      "mass": 12,
+      "expected_signal": 0,
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_M12_negative.jr1_7y6v/alpha/blind/Run3",
+      "card_sha256": "95b4dff5e938b1e9a31f2a939cec8e283571d474ea16a09c24336eb71c180524",
+      "workspace_sha256": "7fbbd3c5329e5aecb64c1199d8db88e917c0e848aedc619805947cfdd2aa3eee",
+      "internal_json_sha256": "8676364c43218d73a4990dcd99b479e96c3a3221ba2c3455f494ed1be59f64e9",
+      "physical_json_sha256": "9caf295c443360e8e930ea575c184b84633ca357f7261f8f004d49e7a10bed55",
+      "pdf_sha256": "1d4e84494c2440befa92e1dc6b0c5350b4bbb6080c805db94a61f904daa3043a",
+      "initial_poi": [
+        -7.145014762878418,
+        7.077671781985373e-16,
+        6.90132999420166
+      ],
+      "rmin": -50.0,
+      "rmax": 100.0,
+      "n_nuisances": 72,
+      "alpha_internal_unit": 9.439998532424134e-07
+    },
+    "Run2Run3": {
+      "passed": true,
+      "target": "Run2Run3",
+      "mass": 12,
+      "expected_signal": 0,
+      "source_directory": "/data6/Users/joonblee/higgs_combine/CMSSW_14_1_0_pre4/src/NIsoMuon/limit_outputs_impacts_M12_negative.AtM8CJ0P/alpha/blind/Run2Run3",
+      "card_sha256": "d64143810063e00d6d4e1cbf50cfdce7617e9f6c5229ba8cc9dfe92528578dce",
+      "workspace_sha256": "e03e10286ef04f038e812d1a4080b8f7ed942a6cf69448d3deed204ce9471e65",
+      "internal_json_sha256": "d16c5c21dde4080eb39d87c57628537040a3ae3a9cf02c592f6df43e341f41ea",
+      "physical_json_sha256": "2021327d9cb873f3700bf1511795cbcee565bda1cbf6d4b970acdae9f2b934eb",
+      "pdf_sha256": "beed81280a8683c39298ffea1b12ed4e8365940fd15558db08b9b60b72e43440",
+      "initial_poi": [
+        -17.902769088745117,
+        -4.941331344099353e-09,
+        17.252351760864258
+      ],
+      "rmin": -50.0,
+      "rmax": 100.0,
+      "n_nuisances": 142,
+      "alpha_internal_unit": 2.0002557396511213e-07
+    }
+  }
 }
