@@ -104,3 +104,26 @@ Run2Run3 cards and current M20/M70 results. It does not modify this checkout
 or push GitLab. The submission README is maintained in
 [docs/gitlab_submission_README.md](docs/gitlab_submission_README.md).
 The export manifest pins source hashes and the systematics submodule commit.
+
+## Apply the compact snapshot to the existing server checkout
+
+Run from a fresh, separate `combine_review` GitHub clone:
+
+```bash
+python3 scripts/sync_gitlab_checkout.py \
+  --checkout /data6/Users/joonblee/higgs_combine/nps-26-009-datacards \
+  --apply
+```
+
+Without `--apply`, this prepares the export and prints a read-only plan. With
+the flag it installs the 71-file compact package, checks every installed hash,
+and moves the old ordinary checkout contents to a reported sibling backup.
+Existing edits are retained there. The Git directory, branch, remotes, index,
+existing `.gitignore` and `systematics` working tree are retained. The existing
+submodule gitlink must match the snapshot's pinned version before installation.
+It does not stage, commit or push anything, and it does not modify NIsoMuon or
+the AN. Review `git status` and the resulting diff before the later GitLab push.
+
+The compact checkout keeps the existing GitLab format: thirteen mass cards,
+the representative M20 CI card, and M20/M70 validation results. All 39 production
+impact sets and historical diagnostics remain in the full GitHub repository.
