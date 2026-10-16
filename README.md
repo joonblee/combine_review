@@ -82,3 +82,16 @@ Local validation does not establish CERN GitLab pipeline success.
 
 docs/README_before_snapshot_sync.md preserves the previous documentation.
 Its snapshot-status statements and numerical validation results are historical.
+
+## Compact GitLab submission
+
+The full GitHub checkout retains detailed diagnostics and all production impacts.
+For the existing compact CERN GitLab layout, run:
+
+    python3 scripts/export_gitlab_submission.py
+
+This creates a new directory containing the representative M20 input, all
+Run2Run3 cards and current M20/M70 results. It does not modify this checkout
+or push GitLab. The submission README is maintained in
+[docs/gitlab_submission_README.md](docs/gitlab_submission_README.md).
+The export manifest pins source hashes and the systematics submodule commit.
