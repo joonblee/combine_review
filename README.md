@@ -80,12 +80,24 @@ workflow=/path/to/combine_review/scripts/limit_workflow.py
 
 python3 "$workflow" --stage all --task limits --target runs \
   --parameter alpha --mode blind --interpolate-signal \
-  --sigfit-dir ./sigfit_inputs --jobs 40 --r-max 100 \
+  --sigfit-dir ./sigfit_inputs --backend condor --r-max 100 \
+  --condor-dir condor_jobs/interpolated_blind \
   --plot-limits-py "$PWD/python/plotLimits.py" --strict
+
+# After every Condor job has finished, collect and plot the results.
+python3 condor_jobs/interpolated_blind/limit_workflow.py \
+  --stage collect --condor-dir condor_jobs/interpolated_blind
 ```
 
 For one era, replace `--target runs` with e.g. `--target 2016preVFP`.
 `--mode` retains its existing behaviour; the scan option does not unblind data.
+Execution defaults to Condor, matching the current production workflow.
+`--stage all` builds cards and submits jobs; it does not wait for their completion.
+Use the printed collect command after the jobs finish. A single-era full scan
+submits 229 mass jobs; each unblind mass job performs the observed fit and a
+separate blind-expected fit. There is no default workflow concurrency cap;
+`--condor-nmax 40` optionally applies the existing site concurrency limit.
+For local execution instead, use `--local --jobs 40`. `--jobs` is local-only.
 Omit `--masses` to use the complete shared grid. With interpolation enabled,
 `--masses 12,12.5,15,20` instead selects exactly those hypotheses (including
 off-grid points inside the supported interval). Without interpolation, the
@@ -138,6 +150,9 @@ Default outputs are `datacards_NIsoMuon_interpolated/` and
 grid/masses and card base. The run stage requires no histogram/sigfit inputs
 but checks that all requested cards exist and match the grid fingerprint.
 The grid JSON must remain alongside the standalone script if it is copied.
+Condor submissions snapshot the grid beside the worker script and save its
+fingerprint in the manifest. Workers, collection and resume use that snapshot,
+so later checkout/custom-grid changes do not change submitted hypotheses.
 
 `signal_interpolation_audit.json` beside `card_summary.json` records the grid,
 resolution inputs, anchor yields/errors/windows, per-point anchor choices and
